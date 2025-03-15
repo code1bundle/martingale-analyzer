@@ -8,7 +8,7 @@
   <artifactId>martingale-analyzer</artifactId>
   <version>1.0.0</version>
   <name>Martingale Analyzer</name>
-  <description>Language independent functions analyzer and tester based on martingale properties.</description>
+  <description>Language independent functions io.github.code1bundle.analyzer and tester based on martingale properties.</description>
   <url>https://github.com/code1bundle/martingale-analyzer</url>
 
   <developers>
@@ -17,11 +17,50 @@
       <url>https://github.com/Dev1Art</url>
     </developer>
 
-
     <developer>
       <name>NikMan1104</name>
       <url>https://github.com/NikMan1104</url>
     </developer>
   </developers>
 
+  <properties>
+    <!--    Lombok-->
+    <lombok.version>1.18.36</lombok.version>
+
+    <jackson-databind.version>2.18.2</jackson-databind.version>
+    <jackson-csv.version>2.18.2</jackson-csv.version>
+
+    <docker-java.version>3.4.2</docker-java.version>
+  </properties>
+
+
+  <dependencies>
+    <!--    Lombok-->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lombok.version}</version>
+    </dependency>
+
+    <!--    Jackson-->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson-databind.version}</version>
+    </dependency>
+
+    <!--    CSV Reader-->
+    <dependency>
+      <groupId>com.fasterxml.jackson.dataformat</groupId>
+      <artifactId>jackson-dataformat-csv</artifactId>
+      <version>${jackson-csv.version}</version>
+    </dependency>
+
+    <!--    Docker API-->
+    <dependency>
+      <groupId>com.github.docker-java</groupId>
+      <artifactId>docker-java</artifactId>
+      <version>${docker-java.version}</version>
+    </dependency>
+  </dependencies>
 </project>
