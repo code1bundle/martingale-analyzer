@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.github.code1bundle</groupId>
+  <artifactId>martingale-analyzer</artifactId>
+  <version>1.0.0</version>
+  <name>Martingale Analyzer</name>
+  <description>Language independent functions analyzer and tester based on martingale properties.</description>
+  <url>https://github.com/code1bundle/martingale-analyzer</url>
+
+  <developers>
+    <developer>
+      <name>Dev1Art</name>
+      <url>https://github.com/Dev1Art</url>
+    </developer>
+
+
+    <developer>
+      <name>NikMan1104</name>
+      <url>https://github.com/NikMan1104</url>
+    </developer>
+  </developers>
+
+</project>
