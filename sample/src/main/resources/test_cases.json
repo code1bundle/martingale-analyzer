@@ -1,0 +1,17 @@
+[
+  {
+    "input": {"A": "5", "B": "10", "group": "privileged"},
+    "expectedOutput": "15",
+    "description": "Add two positive numbers (Group: privileged)"
+  },
+  {
+    "input": {"A": "3", "B": "7", "group": "unprivileged"},
+    "expectedOutput": "10",
+    "description": "Add two positive numbers (Group: unprivileged)"
+  },
+  {
+    "input": {"A": "-2", "B": "5", "group": "default"},
+    "expectedOutput": "3",
+    "description": "Add negative and positive numbers"
+  }
+]
