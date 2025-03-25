@@ -17,15 +17,16 @@ public class TestRunner {
         String functionCode = CodeLoader.loadFromFile(codeSourcesFilePath);
         for (TestCase testCase : testCases) {
             Map<String, String> parameters = testCase.input();
-            String output = codeExecutor.executeFunction(codeExecutor.getLanguage(), functionCode, parameters);
+            String output = codeExecutor.executeFunction(functionCode, parameters);
+            System.out.println("Raw output for test case " + testCase + ": " + output);
             testResults
                     .add(
-                            TestResult
-                                    .builder()
-                                    .testCase(testCase)
-                                    .actualOutput(output)
-                                    .build()
-                    );
+                        TestResult
+                                .builder()
+                                .testCase(testCase)
+                                .actualOutput(output)
+                                .build()
+            );
         }
         return testResults;
     }
