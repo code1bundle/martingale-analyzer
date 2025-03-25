@@ -1,0 +1,22 @@
+[
+  {
+    "input": {"STEPS": "10", "SEED": "123"},
+    "expectedOutput": "0",
+    "description": "Random walk with 10 steps (fixed seed)"
+  },
+  {
+    "input": {"STEPS": "10"},
+    "expectedOutput": "0",
+    "description": "Random walk with 10 steps (random seed)"
+  },
+  {
+    "input": {"STEPS": "100", "SEED": "456"},
+    "expectedOutput": "0",
+    "description": "Random walk with 100 steps (fixed seed)"
+  },
+  {
+    "input": {"STEPS": "100"},
+    "expectedOutput": "0",
+    "description": "Random walk with 100 steps, no seed, for martingale check."
+  }
+]

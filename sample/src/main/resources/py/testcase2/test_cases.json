@@ -1,0 +1,42 @@
+[
+  {
+    "input": {"INITIAL_PRICE": "100", "VOLATILITY": "0.01", "DRIFT": "0.0", "STEPS": "10", "SEED": "789"},
+    "expectedOutput": "100",
+    "description": "Stock price simulation (martingale, fixed seed)"
+  },
+  {
+    "input": {"INITIAL_PRICE": "100", "VOLATILITY": "0.01", "DRIFT": "0.001", "STEPS": "10", "SEED": "101112"},
+    "expectedOutput": "100",
+    "description": "Stock price simulation (non-martingale, positive drift, fixed seed)"
+  },
+  {
+    "input": {"INITIAL_PRICE": "100", "VOLATILITY": "0.01", "DRIFT": "-0.001", "STEPS": "10", "SEED": "131415"},
+    "expectedOutput": "100",
+    "description": "Stock price simulation (non-martingale, negative drift, fixed seed)"
+  },
+  {
+    "input": {"INITIAL_PRICE": "100", "VOLATILITY": "0.01", "DRIFT": "0.0", "STEPS": "100", "SEED": "789"},
+    "expectedOutput": "100",
+    "description": "Stock price simulation (martingale, fixed seed, more steps)"
+  },
+  {
+    "input": {"INITIAL_PRICE": "100", "VOLATILITY": "0.01", "DRIFT": "0.001", "STEPS": "100", "SEED": "101112"},
+    "expectedOutput": "100",
+    "description": "Stock price simulation (non-martingale, positive drift, fixed seed, more steps)"
+  },
+  {
+    "input": {"INITIAL_PRICE": "100", "VOLATILITY": "0.01", "DRIFT": "-0.001", "STEPS": "100", "SEED": "131415"},
+    "expectedOutput": "100",
+    "description": "Stock price simulation (non-martingale, negative drift, fixed seed, more steps)"
+  },
+  {
+    "input": {"INITIAL_PRICE": "100", "VOLATILITY": "0.01", "DRIFT": "0", "STEPS": "25", "SEED":"333"},
+    "expectedOutput": "100",
+    "description": "Stock price, martingale, fixed seed, for martingale check."
+  },
+  {
+    "input": {"INITIAL_PRICE": "100", "VOLATILITY": "0.01", "DRIFT": "0.002", "STEPS": "25","SEED":"333"},
+    "expectedOutput": "100",
+    "description": "Stock price, non-martingale (drift), fixed seed, for martingale check."
+  }
+]

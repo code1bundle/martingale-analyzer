@@ -6,7 +6,7 @@ import java.util.Map;
 
 @Builder
 public record TestCase(
-  @NonNull Map<String, String> input,
-  @NonNull String expectedOutput,
-  String description
+        @NonNull Map<String, String> input,
+        @NonNull String expectedOutput,
+        String description
 ){}

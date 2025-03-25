@@ -18,7 +18,7 @@ public class Main {
         try {
             // Load test cases from a file (e.g., JSON)
             TestLoader testLoader = new TestLoader();
-            List<TestCase> testCases = testLoader.loadTestCasesFromJson("sample/src/main/resources/test_cases.json");
+            List<TestCase> testCases = testLoader.loadTestCasesFromJson("sample/src/main/resources/py/testcase2/test_cases.json");
 
             // Step 2: Initialize Docker and execution components
             DockerManager dockerManager = new DockerManager();
@@ -26,7 +26,7 @@ public class Main {
             TestRunner testRunner = new TestRunner(codeExecutor);
 
             // Step 3: Run tests and collect results
-            List<TestResult> testResults = testRunner.runTests(testCases, "sample/src/main/resources/app.py");
+            List<TestResult> testResults = testRunner.runTests(testCases, "sample/src/main/resources/py/testcase2/app.py");
 
             // Step 4: Initialize analyzer with all validators
             Analyzer analyzer = new Analyzer(

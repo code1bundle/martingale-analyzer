@@ -1,0 +1,17 @@
+[
+  {
+    "input": {"STEPS": "100", "SEED": "123"},
+    "expectedOutput": "0",
+    "description": "Random walk (C++), 100 steps, fixed seed"
+  },
+  {
+    "input": {"STEPS": "100"},
+    "expectedOutput": "0",
+    "description": "Random walk (C++), 100 steps, random seed"
+  },
+  {
+    "input": {"STEPS": "100", "DRIFT" : "0.1", "SEED": "123"},
+    "expectedOutput": "0",
+    "description": "Random walk (C++), 100 steps, fixed seed, drift"
+  }
+]
